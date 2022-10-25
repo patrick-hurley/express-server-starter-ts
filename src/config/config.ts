@@ -1,8 +1,8 @@
 export default {
     development: {
-        username: 'username',
-        password: 'password',
-        database: 'database_name',
+        username: process.env.DB_LOCAL_USER,
+        password: process.env.DB_LOCAL_PASS,
+        database: process.env.DB_LOCAL_NAME,
         host: 'localhost',
         dialect: 'postgres',
     },
